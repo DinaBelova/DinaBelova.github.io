@@ -1,0 +1,1900 @@
+<!doctype html>
+<html ng-app="Application">
+
+  <head>
+    <script>
+        var OSProfilerData = {
+  "info": {
+    "started": 0, 
+    "finished": 25955, 
+    "name": "total"
+  }, 
+  "children": [
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/15735e18a57c4c6b8f83df61572844a7", 
+        "started": 0, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 684, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "GET"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "57f1f472-f795-46bd-a005-dfd17532435e", 
+      "children": []
+    }, 
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/", 
+        "started": 705, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 823, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "GET"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "e16d3c69-cf7a-4fd0-80fe-72d74afa9944", 
+      "children": []
+    }, 
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/15735e18a57c4c6b8f83df61572844a7/images/6a2af63a-0e7d-4c40-b3a8-471e60e2e1de", 
+        "started": 925, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 1275, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "GET"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "d15b541f-ebdd-40cf-96b8-be4276c609b6", 
+      "children": [
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "nova.image", 
+            "service": "osapi_compute", 
+            "started": 1037, 
+            "finished": 1260, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "d15b541f-ebdd-40cf-96b8-be4276c609b6", 
+          "trace_id": "7a4a4bb8-fd07-422d-b343-1d0474bc90d9", 
+          "children": []
+        }
+      ]
+    }, 
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/15735e18a57c4c6b8f83df61572844a7/flavors/42", 
+        "started": 1297, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 1495, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "GET"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "c2fb3f24-3684-4db4-b3e3-537f21c78a57", 
+      "children": [
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT 1", 
+            "started": 1405, 
+            "finished": 1418, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{}"
+          }, 
+          "parent_id": "c2fb3f24-3684-4db4-b3e3-537f21c78a57", 
+          "trace_id": "6366cfd1-870f-4c88-8485-0821408e75de", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT anon_1.instance_types_created_at AS anon_1_instance_types_created_at, anon_1.instance_types_updated_at AS anon_1_instance_types_updated_at, anon_1.instance_types_deleted_at AS anon_1_instance_types_deleted_at, anon_1.instance_types_deleted AS anon_", 
+            "started": 1445, 
+            "finished": 1466, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{u'flavorid_1': u'42', u'param_1': 1, u'deleted_1': 0}"
+          }, 
+          "parent_id": "c2fb3f24-3684-4db4-b3e3-537f21c78a57", 
+          "trace_id": "372adf6e-70bc-494c-a709-144c2c35071f", 
+          "children": []
+        }
+      ]
+    }, 
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/15735e18a57c4c6b8f83df61572844a7/servers", 
+        "started": 1513, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 23448, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "POST"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "e0c73f19-632c-48a0-ac21-eed28e1e62bc", 
+      "children": [
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "compute.api", 
+            "service": "osapi_compute", 
+            "started": 19823, 
+            "finished": 19828, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "e0c73f19-632c-48a0-ac21-eed28e1e62bc", 
+          "trace_id": "afc7931b-cce3-4176-9a23-e33eb72f3061", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT 1", 
+            "started": 19870, 
+            "finished": 19877, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{}"
+          }, 
+          "parent_id": "e0c73f19-632c-48a0-ac21-eed28e1e62bc", 
+          "trace_id": "de680445-609e-41f0-8a82-d005861d5ba3", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT anon_1.instance_types_created_at AS anon_1_instance_types_created_at, anon_1.instance_types_updated_at AS anon_1_instance_types_updated_at, anon_1.instance_types_deleted_at AS anon_1_instance_types_deleted_at, anon_1.instance_types_deleted AS anon_", 
+            "started": 19920, 
+            "finished": 19948, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{u'flavorid_1': u'42', u'param_1': 1, u'deleted_2': 0, u'deleted_1': 0}"
+          }, 
+          "parent_id": "e0c73f19-632c-48a0-ac21-eed28e1e62bc", 
+          "trace_id": "d335ca48-b1b0-444d-949c-adfa8cbc8116", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "compute.api", 
+            "service": "osapi_compute", 
+            "started": 19984, 
+            "finished": 23434, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "e0c73f19-632c-48a0-ac21-eed28e1e62bc", 
+          "trace_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+          "children": [
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "nova.image", 
+                "service": "osapi_compute", 
+                "started": 20004, 
+                "finished": 20206, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "45046fdd-773f-4650-bb22-ae7cbd5487e2", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "nova.image", 
+                "service": "osapi_compute", 
+                "started": 20218, 
+                "finished": 20429, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "405cc8d8-608d-471c-a09b-8c3dd5960d3e", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "nova.image", 
+                "service": "osapi_compute", 
+                "started": 20441, 
+                "finished": 20631, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "05c76868-fedf-4d59-810d-15f47b14ef06", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 20649, 
+                "finished": 20682, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "90db563d-901d-4e91-bd70-ea5f1d86ab46", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quotas.created_at AS quotas_created_at, quotas.updated_at AS quotas_updated_at, quotas.deleted_at AS quotas_deleted_at, quotas.deleted AS quotas_deleted, quotas.id AS quotas_id, quotas.project_id AS quotas_project_id, quotas.resource AS quotas_reso", 
+                "started": 20699, 
+                "finished": 20718, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "2f9f8f97-a3c9-4866-ac38-54371bb8dc19", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 20750, 
+                "finished": 20767, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "77733f80-24da-44cf-824e-2824916bf7b7", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quota_classes.created_at AS quota_classes_created_at, quota_classes.updated_at AS quota_classes_updated_at, quota_classes.deleted_at AS quota_classes_deleted_at, quota_classes.deleted AS quota_classes_deleted, quota_classes.id AS quota_classes_id, ", 
+                "started": 20789, 
+                "finished": 20813, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'class_name_1': u'default', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "7263f923-b76b-4ab3-a231-5d7b64210e95", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 20863, 
+                "finished": 20878, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "9bbada43-b069-45b1-aa5d-a89dad3d1483", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT project_user_quotas.resource AS project_user_quotas_resource, project_user_quotas.hard_limit AS project_user_quotas_hard_limit \nFROM project_user_quotas \nWHERE project_user_quotas.deleted = %(deleted_1)s AND project_user_quotas.project_id = %(proje", 
+                "started": 20901, 
+                "finished": 20942, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'user_id_1': u'52d5f28fad29447da5ae79b43c438e82', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "12524b51-12fd-4149-9092-bea577578b98", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 20975, 
+                "finished": 20992, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "7cf6c1f3-a882-4a46-ac7a-f06371808d48", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quota_classes.created_at AS quota_classes_created_at, quota_classes.updated_at AS quota_classes_updated_at, quota_classes.deleted_at AS quota_classes_deleted_at, quota_classes.deleted AS quota_classes_deleted, quota_classes.id AS quota_classes_id, ", 
+                "started": 21006, 
+                "finished": 21034, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'class_name_1': u'default', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "6a88a52d-113a-44bb-a6db-7269b71e54fb", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 21070, 
+                "finished": 21086, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "c9e621d5-86fc-44f3-8763-25fbdc11a118", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quotas.created_at AS quotas_created_at, quotas.updated_at AS quotas_updated_at, quotas.deleted_at AS quotas_deleted_at, quotas.deleted AS quotas_deleted, quotas.id AS quotas_id, quotas.project_id AS quotas_project_id, quotas.resource AS quotas_reso", 
+                "started": 21106, 
+                "finished": 21131, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "f7ef88b4-b6e5-4a63-9765-421caccd7eb7", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 21168, 
+                "finished": 21187, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "9f853adf-1ddd-4135-9239-01b0c1d49fda", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quota_classes.created_at AS quota_classes_created_at, quota_classes.updated_at AS quota_classes_updated_at, quota_classes.deleted_at AS quota_classes_deleted_at, quota_classes.deleted AS quota_classes_deleted, quota_classes.id AS quota_classes_id, ", 
+                "started": 21209, 
+                "finished": 21241, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'class_name_1': u'default', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "03f8a816-d88b-4c8d-9431-ffee534151e8", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 21281, 
+                "finished": 21293, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "2fc5221e-8e15-4b5c-8347-598744c3a43a", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT project_user_quotas.resource AS project_user_quotas_resource, project_user_quotas.hard_limit AS project_user_quotas_hard_limit \nFROM project_user_quotas \nWHERE project_user_quotas.deleted = %(deleted_1)s AND project_user_quotas.project_id = %(proje", 
+                "started": 21312, 
+                "finished": 21335, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'user_id_1': u'52d5f28fad29447da5ae79b43c438e82', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "874a109d-2923-4846-bf43-0f4ad8da9331", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 21369, 
+                "finished": 21395, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "c7530f13-fe18-4ee0-bd00-489cc36cfed7", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quota_classes.created_at AS quota_classes_created_at, quota_classes.updated_at AS quota_classes_updated_at, quota_classes.deleted_at AS quota_classes_deleted_at, quota_classes.deleted AS quota_classes_deleted, quota_classes.id AS quota_classes_id, ", 
+                "started": 21408, 
+                "finished": 21429, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'class_name_1': u'default', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "4be669d7-fbe2-491c-8598-af7df14a7230", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 21463, 
+                "finished": 21481, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "6841de7e-6d85-4811-972f-2833adbf097f", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quota_usages.created_at AS quota_usages_created_at, quota_usages.updated_at AS quota_usages_updated_at, quota_usages.deleted_at AS quota_usages_deleted_at, quota_usages.deleted AS quota_usages_deleted, quota_usages.id AS quota_usages_id, quota_usag", 
+                "started": 21513, 
+                "finished": 21539, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "5d27252b-a86c-4367-bb43-7fb773f581d4", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "INSERT INTO reservations (created_at, updated_at, deleted_at, deleted, uuid, usage_id, project_id, user_id, resource, delta, expire) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(uuid)s, %(usage_id)s, %(project_id)s, %(user_id)s, ", 
+                "started": 21558, 
+                "finished": 21581, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'deleted_at': None, u'user_id': u'52d5f28fad29447da5ae79b43c438e82', u'uuid': u'95ad062c-1aa3-4f77-b7dd-89cd03654505', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.159231', u'updated_at': None, u'expire': u'2016-01-20T13:32:57.655805', u'delta': "
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "8978372a-8e81-41a1-a11f-713d13ee1a28", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "UPDATE quota_usages SET updated_at=%(updated_at)s, reserved=%(reserved)s WHERE quota_usages.id = %(quota_usages_id)s", 
+                "started": 21603, 
+                "finished": 21629, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'quota_usages_id': 1, u'reserved': 1, u'updated_at': u'2016-01-19T13:32:58.204830'}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "de2dcbb9-f01f-49c8-875a-17fde8112b83", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "INSERT INTO reservations (created_at, updated_at, deleted_at, deleted, uuid, usage_id, project_id, user_id, resource, delta, expire) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(uuid)s, %(usage_id)s, %(project_id)s, %(user_id)s, ", 
+                "started": 21644, 
+                "finished": 21663, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'deleted_at': None, u'user_id': u'52d5f28fad29447da5ae79b43c438e82', u'uuid': u'5d9b443c-5314-4cf0-8dd8-10bdf2cb4f4f', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.244457', u'updated_at': None, u'expire': u'2016-01-20T13:32:57.655805', u'delta': "
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "674c163a-2d31-4905-b302-75c9bfd04215", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "UPDATE quota_usages SET updated_at=%(updated_at)s, reserved=%(reserved)s WHERE quota_usages.id = %(quota_usages_id)s", 
+                "started": 21685, 
+                "finished": 21707, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'quota_usages_id': 2, u'reserved': 64, u'updated_at': u'2016-01-19T13:32:58.286714'}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "8bece96b-4276-4151-8a41-58fd1f8c7660", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "INSERT INTO reservations (created_at, updated_at, deleted_at, deleted, uuid, usage_id, project_id, user_id, resource, delta, expire) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(uuid)s, %(usage_id)s, %(project_id)s, %(user_id)s, ", 
+                "started": 21725, 
+                "finished": 21747, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'deleted_at': None, u'user_id': u'52d5f28fad29447da5ae79b43c438e82', u'uuid': u'e246a019-9590-4eb0-80f3-4e573d26c7ca', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.326199', u'updated_at': None, u'expire': u'2016-01-20T13:32:57.655805', u'delta': "
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "a75f4e3a-3e40-4060-bac8-da33f376affd", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "UPDATE quota_usages SET updated_at=%(updated_at)s, reserved=%(reserved)s WHERE quota_usages.id = %(quota_usages_id)s", 
+                "started": 21767, 
+                "finished": 21792, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'quota_usages_id': 3, u'reserved': 1, u'updated_at': u'2016-01-19T13:32:58.368724'}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "7b35a3db-8835-4eea-92de-165af61755ba", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "compute.api", 
+                "service": "osapi_compute", 
+                "started": 21834, 
+                "finished": 22828, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+              "children": [
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 21850, 
+                    "finished": 21876, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "32419166-8060-4542-8cf3-77297d411fdd", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT security_groups.created_at AS security_groups_created_at, security_groups.updated_at AS security_groups_updated_at, security_groups.deleted_at AS security_groups_deleted_at, security_groups.deleted AS security_groups_deleted, security_groups.id AS ", 
+                    "started": 21905, 
+                    "finished": 21937, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'name_1': u'default', u'deleted_1': 0}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "19c4f775-799c-44ca-92c7-ac06f721b446", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 21968, 
+                    "finished": 21994, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "f8ed9e6b-8cc5-4a39-a105-3849a632edb3", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT security_groups.created_at AS security_groups_created_at, security_groups.updated_at AS security_groups_updated_at, security_groups.deleted_at AS security_groups_deleted_at, security_groups.deleted AS security_groups_deleted, security_groups.id AS ", 
+                    "started": 22013, 
+                    "finished": 22038, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'name_1': u'default', u'deleted_1': 0}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "e78e41c9-3311-463a-bbcf-1f75512e284f", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 22069, 
+                    "finished": 22085, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "f24e5b76-054a-4e7a-bece-e06938b07b1d", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT security_groups.created_at AS security_groups_created_at, security_groups.updated_at AS security_groups_updated_at, security_groups.deleted_at AS security_groups_deleted_at, security_groups.deleted AS security_groups_deleted, security_groups.id AS ", 
+                    "started": 22100, 
+                    "finished": 22125, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'name_1': u'default', u'deleted_1': 0}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "a93d6dd2-70c4-4cef-ae1a-6fa1126d676e", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instances (created_at, updated_at, deleted_at, deleted, user_id, project_id, image_ref, kernel_id, ramdisk_id, hostname, launch_index, key_name, key_data, power_state, vm_state, task_state, memory_mb, vcpus, root_gb, ephemeral_gb, ephemeral_ke", 
+                    "started": 22165, 
+                    "finished": 22179, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'vm_state': u'building', u'internal_id': None, u'availability_zone': None, u'terminated_at': None, u'ramdisk_id': u'3ad300f7-2cb0-4f1d-88ef-b68126c2132f', u'instance_type_id': 6, u'updated_at': None, u'cleaned': 0, u'vm_mode': None, u'deleted_at': None,"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "78238e63-cebe-4a09-84a6-09944c678678", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO security_group_instance_association (created_at, deleted, security_group_id, instance_uuid) VALUES (%(created_at)s, %(deleted)s, %(security_group_id)s, %(instance_uuid)s)", 
+                    "started": 22196, 
+                    "finished": 22213, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.797399', u'security_group_id': 1}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "fd52acce-b205-406f-be34-2568355b1e30", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_system_metadata (created_at, updated_at, deleted_at, deleted, `key`, value, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(key)s, %(value)s, %(instance_uuid)s)", 
+                    "started": 22238, 
+                    "finished": 22259, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.833719', u'updated_at': None, u'value': u'a2e9df7a-cb0f-4831-bf5e-59d27ecd796c', u'key': u'image_kernel_id', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "b383d217-c699-439c-b624-2a5678ef22c3", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_system_metadata (created_at, updated_at, deleted_at, deleted, `key`, value, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(key)s, %(value)s, %(instance_uuid)s)", 
+                    "started": 22279, 
+                    "finished": 22301, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.881133', u'updated_at': None, u'value': u'0', u'key': u'image_min_disk', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "15ab6e7f-abd2-4f40-b144-9e518ef12822", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_system_metadata (created_at, updated_at, deleted_at, deleted, `key`, value, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(key)s, %(value)s, %(instance_uuid)s)", 
+                    "started": 22318, 
+                    "finished": 22345, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.919680', u'updated_at': None, u'value': u'ami', u'key': u'image_container_format', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "a761c4f5-509f-46e0-9c5f-cf1d4ac7109e", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_system_metadata (created_at, updated_at, deleted_at, deleted, `key`, value, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(key)s, %(value)s, %(instance_uuid)s)", 
+                    "started": 22358, 
+                    "finished": 22381, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:58.959540', u'updated_at': None, u'value': u'0', u'key': u'image_min_ram', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "18cb0cd1-101a-464b-9609-340e0116a7f1", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_system_metadata (created_at, updated_at, deleted_at, deleted, `key`, value, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(key)s, %(value)s, %(instance_uuid)s)", 
+                    "started": 22399, 
+                    "finished": 22419, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:59.000941', u'updated_at': None, u'value': u'3ad300f7-2cb0-4f1d-88ef-b68126c2132f', u'key': u'image_ramdisk_id', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "92560f91-6650-4b0b-829b-c2e98973b38d", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_system_metadata (created_at, updated_at, deleted_at, deleted, `key`, value, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(key)s, %(value)s, %(instance_uuid)s)", 
+                    "started": 22439, 
+                    "finished": 22458, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:59.041060', u'updated_at': None, u'value': u'ami', u'key': u'image_disk_format', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "bf424cc3-c3c6-453d-8bb0-6d6637c56522", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_system_metadata (created_at, updated_at, deleted_at, deleted, `key`, value, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(key)s, %(value)s, %(instance_uuid)s)", 
+                    "started": 22484, 
+                    "finished": 22507, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:59.085377', u'updated_at': None, u'value': u'6a2af63a-0e7d-4c40-b3a8-471e60e2e1de', u'key': u'image_base_image_ref', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "3f2ed9f2-a507-442a-8f28-fa4deb671092", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_extra (created_at, updated_at, deleted_at, deleted, instance_uuid, numa_topology, pci_requests, flavor, vcpu_model, migration_context) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(instance_uuid)s, %(numa_topo", 
+                    "started": 22537, 
+                    "finished": 22561, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'pci_requests': u'[]', u'deleted': 0, u'created_at': u'2016-01-19T13:32:59.138534', u'updated_at': None, u'numa_topology': None, u'vcpu_model': None, u'migration_context': None, u'flavor': u'{\"n"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "626a3e63-44fc-4f64-a73d-d43e8e964b33", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_info_caches (created_at, updated_at, deleted_at, deleted, network_info, instance_uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(network_info)s, %(instance_uuid)s)", 
+                    "started": 22580, 
+                    "finished": 22606, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted': 0, u'created_at': u'2016-01-19T13:32:59.181202', u'updated_at': None, u'network_info': u'[]', u'deleted_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "57ff4629-c2fd-4d24-87b6-31fe48ca19a2", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 22632, 
+                    "finished": 22649, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "534960eb-daf2-410a-ba0e-85d8f7d10161", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO instance_id_mappings (created_at, updated_at, deleted_at, deleted, uuid) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(uuid)s)", 
+                    "started": 22664, 
+                    "finished": 22686, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'deleted': 0, u'created_at': u'2016-01-19T13:32:59.265547', u'deleted_at': None, u'uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'updated_at': None}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "46db2c24-e37a-4351-b4fa-64b96b81bb33", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 22725, 
+                    "finished": 22741, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "51dbf70c-208b-4140-a31c-25b3a13bcc7c", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "osapi_compute", 
+                    "meta.db.statement": "INSERT INTO block_device_mapping (created_at, updated_at, deleted_at, deleted, instance_uuid, source_type, destination_type, guest_format, device_type, disk_bus, boot_index, device_name, delete_on_termination, snapshot_id, volume_id, volume_size, image_id", 
+                    "started": 22758, 
+                    "finished": 22806, 
+                    "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'volume_size': None, u'guest_format': None, u'boot_index': 0, u'image_id': u'6a2af63a-0e7d-4c40-b3a8-471e60e2e1de', u'no_device': 0, u'connection_info': None, u'created_at': u'2016-01-19T13:32:5"
+                  }, 
+                  "parent_id": "c63dd3ce-24a5-48ba-b677-585c161fcd5e", 
+                  "trace_id": "a609bbab-7122-4da8-b3f9-cee2f63bf112", 
+                  "children": []
+                }
+              ]
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 22873, 
+                "finished": 22894, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "907214cb-5dd2-4fcc-a0b1-88ad32c9fc74", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT bw_usage_cache.created_at AS bw_usage_cache_created_at, bw_usage_cache.updated_at AS bw_usage_cache_updated_at, bw_usage_cache.deleted_at AS bw_usage_cache_deleted_at, bw_usage_cache.deleted AS bw_usage_cache_deleted, bw_usage_cache.id AS bw_usage_", 
+                "started": 22910, 
+                "finished": 22941, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'start_period_1': u'2016-01-19T13:00:00.000000', u'uuid_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070'}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "d4a6e675-18af-496d-9df9-3f94f22b56d5", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 22997, 
+                "finished": 23030, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "e8a6cd91-ca03-438b-af13-34c970034667", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT quota_usages.created_at AS quota_usages_created_at, quota_usages.updated_at AS quota_usages_updated_at, quota_usages.deleted_at AS quota_usages_deleted_at, quota_usages.deleted AS quota_usages_deleted, quota_usages.id AS quota_usages_id, quota_usag", 
+                "started": 23054, 
+                "finished": 23081, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'project_id_1': u'15735e18a57c4c6b8f83df61572844a7', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "e0dc5093-7c12-40d4-932f-32bc9fa70cf8", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT reservations.created_at AS reservations_created_at, reservations.updated_at AS reservations_updated_at, reservations.deleted_at AS reservations_deleted_at, reservations.deleted AS reservations_deleted, reservations.id AS reservations_id, reservatio", 
+                "started": 23117, 
+                "finished": 23136, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'uuid_2': u'5d9b443c-5314-4cf0-8dd8-10bdf2cb4f4f', u'uuid_3': u'e246a019-9590-4eb0-80f3-4e573d26c7ca', u'uuid_1': u'95ad062c-1aa3-4f77-b7dd-89cd03654505', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "73a5bbac-ae2e-41d4-ac84-ed8549fe7fe4", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "UPDATE quota_usages SET updated_at=%(updated_at)s, in_use=%(in_use)s, reserved=%(reserved)s WHERE quota_usages.id = %(quota_usages_id)s", 
+                "started": 23187, 
+                "finished": 23208, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "[{u'quota_usages_id': 1, u'reserved': 0, u'updated_at': u'2016-01-19T13:32:59.788145', u'in_use': 3}, {u'quota_usages_id': 2, u'reserved': 0, u'updated_at': u'2016-01-19T13:32:59.788153', u'in_use': 192}, {u'quota_usages_id': 3, u'reserved': 0, u'updated_"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "c8a3fd10-60bb-4dec-b0b3-30cfa37cd183", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "UPDATE reservations SET updated_at=updated_at, deleted_at=%(deleted_at)s, deleted=id WHERE reservations.deleted = %(deleted_1)s AND reservations.uuid IN (%(uuid_1)s, %(uuid_2)s, %(uuid_3)s)", 
+                "started": 23241, 
+                "finished": 23264, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'uuid_2': u'5d9b443c-5314-4cf0-8dd8-10bdf2cb4f4f', u'uuid_3': u'e246a019-9590-4eb0-80f3-4e573d26c7ca', u'uuid_1': u'95ad062c-1aa3-4f77-b7dd-89cd03654505', u'deleted_at': u'2016-01-19T13:32:59.784842', u'deleted_1': 0}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "52a77ffa-efa3-4c0e-8489-a653ed4eb4e4", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 23310, 
+                "finished": 23328, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "7c2f3ce6-59dc-4b74-b579-f6307365f419", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "INSERT INTO instance_actions (created_at, updated_at, deleted_at, deleted, action, instance_uuid, request_id, user_id, project_id, start_time, finish_time, message) VALUES (%(created_at)s, %(updated_at)s, %(deleted_at)s, %(deleted)s, %(action)s, %(instanc", 
+                "started": 23360, 
+                "finished": 23392, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'instance_uuid': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'project_id': u'15735e18a57c4c6b8f83df61572844a7', u'user_id': u'52d5f28fad29447da5ae79b43c438e82', u'deleted': 0, u'start_time': u'2016-01-19T13:32:38.223460', u'updated_at': None, u'finish_tim"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "6bf842d8-0a64-45bc-960e-48d2b26f999c", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "rpc", 
+                "service": "nova-conductor", 
+                "started": 23433, 
+                "finished": 25884, 
+                "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                "project": "nova", 
+                "host": "ubuntu"
+              }, 
+              "parent_id": "c1e7f91e-91eb-4837-93a6-7c638ae9c42e", 
+              "trace_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+              "children": [
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 23504, 
+                    "finished": 23543, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "9678deb6-6f41-48d0-b287-b192252f1e16", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT instance_group_member.created_at AS instance_group_member_created_at, instance_group_member.updated_at AS instance_group_member_updated_at, instance_group_member.deleted_at AS instance_group_member_deleted_at, instance_group_member.deleted AS insta", 
+                    "started": 23594, 
+                    "finished": 23662, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'param_1': 1, u'instance_id_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted_1': 0}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "14f852ae-8a8b-48a6-b5c7-3f51f9473cb7", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "rpc", 
+                    "service": "nova-conductor", 
+                    "started": 23719, 
+                    "finished": 24208, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "d5c63b59-4605-4011-9cb9-e25b7240542e", 
+                  "children": [
+                    {
+                      "info": {
+                        "meta.host": "ubuntu", 
+                        "name": "rpc", 
+                        "service": "nova-scheduler", 
+                        "started": 23797, 
+                        "finished": 24178, 
+                        "meta.request_id": "req-20724b3b-6f3e-4f97-a919-73f5edb13aef", 
+                        "project": "nova", 
+                        "host": "ubuntu"
+                      }, 
+                      "parent_id": "d5c63b59-4605-4011-9cb9-e25b7240542e", 
+                      "trace_id": "5a445854-9a0e-478c-8a9a-788ee9e39f30", 
+                      "children": [
+                        {
+                          "info": {
+                            "meta.host": "ubuntu", 
+                            "name": "db", 
+                            "service": "nova-scheduler", 
+                            "meta.db.statement": "SELECT 1", 
+                            "started": 23830, 
+                            "finished": 23858, 
+                            "meta.request_id": "req-20724b3b-6f3e-4f97-a919-73f5edb13aef", 
+                            "project": "nova", 
+                            "host": "ubuntu", 
+                            "meta.db.params": "{}"
+                          }, 
+                          "parent_id": "5a445854-9a0e-478c-8a9a-788ee9e39f30", 
+                          "trace_id": "43280974-a6a6-4a47-877f-ab95ee0c5a43", 
+                          "children": []
+                        }, 
+                        {
+                          "info": {
+                            "meta.host": "ubuntu", 
+                            "name": "db", 
+                            "service": "nova-scheduler", 
+                            "meta.db.statement": "SELECT services.created_at AS services_created_at, services.updated_at AS services_updated_at, services.deleted_at AS services_deleted_at, services.deleted AS services_deleted, services.id AS services_id, services.host AS services_host, services.`binary` ", 
+                            "started": 23877, 
+                            "finished": 23915, 
+                            "meta.request_id": "req-20724b3b-6f3e-4f97-a919-73f5edb13aef", 
+                            "project": "nova", 
+                            "host": "ubuntu", 
+                            "meta.db.params": "{u'deleted_1': 0, u'binary_1': u'nova-compute'}"
+                          }, 
+                          "parent_id": "5a445854-9a0e-478c-8a9a-788ee9e39f30", 
+                          "trace_id": "494b7075-7785-44bd-b7e4-70c8b53b5216", 
+                          "children": []
+                        }, 
+                        {
+                          "info": {
+                            "meta.host": "ubuntu", 
+                            "name": "db", 
+                            "service": "nova-scheduler", 
+                            "meta.db.statement": "SELECT 1", 
+                            "started": 23948, 
+                            "finished": 23966, 
+                            "meta.request_id": "req-20724b3b-6f3e-4f97-a919-73f5edb13aef", 
+                            "project": "nova", 
+                            "host": "ubuntu", 
+                            "meta.db.params": "{}"
+                          }, 
+                          "parent_id": "5a445854-9a0e-478c-8a9a-788ee9e39f30", 
+                          "trace_id": "168a7c6a-586c-441f-92e5-744466a6ba87", 
+                          "children": []
+                        }, 
+                        {
+                          "info": {
+                            "meta.host": "ubuntu", 
+                            "name": "db", 
+                            "service": "nova-scheduler", 
+                            "meta.db.statement": "SELECT compute_nodes.created_at AS compute_nodes_created_at, compute_nodes.updated_at AS compute_nodes_updated_at, compute_nodes.deleted_at AS compute_nodes_deleted_at, compute_nodes.deleted AS compute_nodes_deleted, compute_nodes.id AS compute_nodes_id, ", 
+                            "started": 23985, 
+                            "finished": 24027, 
+                            "meta.request_id": "req-20724b3b-6f3e-4f97-a919-73f5edb13aef", 
+                            "project": "nova", 
+                            "host": "ubuntu", 
+                            "meta.db.params": "{u'deleted_1': 0}"
+                          }, 
+                          "parent_id": "5a445854-9a0e-478c-8a9a-788ee9e39f30", 
+                          "trace_id": "2398ae3f-3c6c-44d5-9326-bf17cc00a4c9", 
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 24295, 
+                    "finished": 24346, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "dda2a1ec-24f5-4b6b-a1aa-112f5fdfb933", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT anon_1.instances_created_at AS anon_1_instances_created_at, anon_1.instances_updated_at AS anon_1_instances_updated_at, anon_1.instances_deleted_at AS anon_1_instances_deleted_at, anon_1.instances_deleted AS anon_1_instances_deleted, anon_1.instanc", 
+                    "started": 24454, 
+                    "finished": 24499, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'uuid_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted_3': 0, u'deleted_5': 0, u'deleted_4': 0, u'param_1': 1, u'deleted_2': 0, u'deleted_1': 0, u'deleted_6': 0}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "fa0d0230-609a-49ff-88ce-31a023137e2c", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 24948, 
+                    "finished": 24997, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "9e4b1e39-a2f6-4c27-b15e-d5cdfb1e8eb1", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT instance_extra.numa_topology AS instance_extra_numa_topology, instance_extra.created_at AS instance_extra_created_at, instance_extra.updated_at AS instance_extra_updated_at, instance_extra.deleted_at AS instance_extra_deleted_at, instance_extra.del", 
+                    "started": 25014, 
+                    "finished": 25071, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'param_1': 1, u'instance_uuid_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted_1': 0}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "267df036-2e39-4dcc-906d-b54ad9bdaadf", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 25145, 
+                    "finished": 25176, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "ba724175-3cae-4f0e-9b6d-2cba809703f9", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT instance_info_caches.created_at AS instance_info_caches_created_at, instance_info_caches.updated_at AS instance_info_caches_updated_at, instance_info_caches.deleted_at AS instance_info_caches_deleted_at, instance_info_caches.deleted AS instance_inf", 
+                    "started": 25224, 
+                    "finished": 25286, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'param_1': 1, u'instance_uuid_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted_1': 0}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "35600c5b-daeb-4c16-9c34-cdec97a7b1e9", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT 1", 
+                    "started": 25325, 
+                    "finished": 25369, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "3ee62d15-85f4-4b31-8c1b-75cde915c5b5", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "db", 
+                    "service": "nova-conductor", 
+                    "meta.db.statement": "SELECT block_device_mapping.created_at AS block_device_mapping_created_at, block_device_mapping.updated_at AS block_device_mapping_updated_at, block_device_mapping.deleted_at AS block_device_mapping_deleted_at, block_device_mapping.deleted AS block_device", 
+                    "started": 25408, 
+                    "finished": 25433, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu", 
+                    "meta.db.params": "{u'deleted_1': 0, u'instance_uuid_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070'}"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "e09fbe62-d27c-4d58-9918-8328de69eb49", 
+                  "children": []
+                }, 
+                {
+                  "info": {
+                    "meta.host": "ubuntu", 
+                    "name": "rpc", 
+                    "service": "nova-conductor", 
+                    "started": 25458, 
+                    "finished": 25678, 
+                    "meta.request_id": "req-abf6103a-bd07-4b8c-84da-19043bb48840", 
+                    "project": "nova", 
+                    "host": "ubuntu"
+                  }, 
+                  "parent_id": "aa138e6e-2972-41c9-9b2a-f3dfb7a83091", 
+                  "trace_id": "595f688d-60f8-43b1-a363-01f8bd4d9ce6", 
+                  "children": [
+                    {
+                      "info": {
+                        "meta.host": "ubuntu", 
+                        "name": "rpc", 
+                        "service": "nova-compute", 
+                        "started": 25941, 
+                        "finished": 25955, 
+                        "meta.request_id": "req-c3da2bf8-9876-4ca1-8e50-bb28bfb80ab1", 
+                        "project": "nova", 
+                        "host": "ubuntu"
+                      }, 
+                      "parent_id": "595f688d-60f8-43b1-a363-01f8bd4d9ce6", 
+                      "trace_id": "9b227bd6-77bd-4dab-b0f9-15b72b40d1f8", 
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }, 
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/15735e18a57c4c6b8f83df61572844a7/servers/49c7a5ae-5000-4e3e-9d96-6710b4042070", 
+        "started": 23493, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 24415, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "GET"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "465655ac-e869-4106-9d75-6ce37d0480a2", 
+      "children": [
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "compute.api", 
+            "service": "osapi_compute", 
+            "started": 23732, 
+            "finished": 24262, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "465655ac-e869-4106-9d75-6ce37d0480a2", 
+          "trace_id": "4ab21460-e706-4864-82a7-c9d680ed115c", 
+          "children": [
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT 1", 
+                "started": 23969, 
+                "finished": 24028, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{}"
+              }, 
+              "parent_id": "4ab21460-e706-4864-82a7-c9d680ed115c", 
+              "trace_id": "b8ddbb41-c076-4fa2-9c25-4ca0d32e879f", 
+              "children": []
+            }, 
+            {
+              "info": {
+                "meta.host": "ubuntu", 
+                "name": "db", 
+                "service": "osapi_compute", 
+                "meta.db.statement": "SELECT anon_1.instances_created_at AS anon_1_instances_created_at, anon_1.instances_updated_at AS anon_1_instances_updated_at, anon_1.instances_deleted_at AS anon_1_instances_deleted_at, anon_1.instances_deleted AS anon_1_instances_deleted, anon_1.instanc", 
+                "started": 24108, 
+                "finished": 24137, 
+                "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+                "project": "nova", 
+                "host": "ubuntu", 
+                "meta.db.params": "{u'uuid_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted_7': 0, u'deleted_6': 0, u'deleted_5': 0, u'deleted_4': 0, u'deleted_3': 0, u'deleted_2': 0, u'deleted_1': 0, u'param_1': 1}"
+              }, 
+              "parent_id": "4ab21460-e706-4864-82a7-c9d680ed115c", 
+              "trace_id": "76ff9834-66fd-40df-9553-99ed5cc1f1dc", 
+              "children": []
+            }
+          ]
+        }, 
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT 1", 
+            "started": 24291, 
+            "finished": 24307, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{}"
+          }, 
+          "parent_id": "465655ac-e869-4106-9d75-6ce37d0480a2", 
+          "trace_id": "9141129c-780e-46df-9a0f-ed77ac5cd554", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT block_device_mapping.created_at AS block_device_mapping_created_at, block_device_mapping.updated_at AS block_device_mapping_updated_at, block_device_mapping.deleted_at AS block_device_mapping_deleted_at, block_device_mapping.deleted AS block_device", 
+            "started": 24325, 
+            "finished": 24366, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{u'instance_uuid_1': u'49c7a5ae-5000-4e3e-9d96-6710b4042070', u'deleted_1': 0}"
+          }, 
+          "parent_id": "465655ac-e869-4106-9d75-6ce37d0480a2", 
+          "trace_id": "dd57eb01-1fc9-4f7d-9369-10c8666a93fd", 
+          "children": []
+        }
+      ]
+    }, 
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/15735e18a57c4c6b8f83df61572844a7/flavors/42", 
+        "started": 24449, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 24777, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "GET"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "1cf7d388-28f1-4d03-b9d8-82e7bd14d714", 
+      "children": [
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT 1", 
+            "started": 24682, 
+            "finished": 24698, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{}"
+          }, 
+          "parent_id": "1cf7d388-28f1-4d03-b9d8-82e7bd14d714", 
+          "trace_id": "51bea2f6-bb97-4d8d-b639-b37665e20d88", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "db", 
+            "service": "osapi_compute", 
+            "meta.db.statement": "SELECT anon_1.instance_types_created_at AS anon_1_instance_types_created_at, anon_1.instance_types_updated_at AS anon_1_instance_types_updated_at, anon_1.instance_types_deleted_at AS anon_1_instance_types_deleted_at, anon_1.instance_types_deleted AS anon_", 
+            "started": 24715, 
+            "finished": 24746, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu", 
+            "meta.db.params": "{u'flavorid_1': u'42', u'param_1': 1, u'deleted_1': 0}"
+          }, 
+          "parent_id": "1cf7d388-28f1-4d03-b9d8-82e7bd14d714", 
+          "trace_id": "c1ad50c8-8967-493d-92ea-25a30b73e724", 
+          "children": []
+        }
+      ]
+    }, 
+    {
+      "info": {
+        "meta.host": "ubuntu", 
+        "name": "wsgi", 
+        "service": "osapi_compute", 
+        "meta.path": "/v2.1/15735e18a57c4c6b8f83df61572844a7/images/6a2af63a-0e7d-4c40-b3a8-471e60e2e1de", 
+        "started": 24796, 
+        "meta.scheme": "http", 
+        "meta.query": "", 
+        "finished": 25484, 
+        "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+        "project": "nova", 
+        "host": "ubuntu", 
+        "meta.method": "GET"
+      }, 
+      "parent_id": "b8bacc65-1877-456a-aa44-a69a3d94d8aa", 
+      "trace_id": "f08ec86b-4bbd-463e-8fe6-1ca07d595054", 
+      "children": [
+        {
+          "info": {
+            "meta.host": "ubuntu", 
+            "name": "nova.image", 
+            "service": "osapi_compute", 
+            "started": 24998, 
+            "finished": 25465, 
+            "meta.request_id": "req-6e500aac-df1d-4e9a-86c9-12aba2e44242", 
+            "project": "nova", 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f08ec86b-4bbd-463e-8fe6-1ca07d595054", 
+          "trace_id": "bd1ef3fb-30cc-427e-8528-f129a52ca1d5", 
+          "children": []
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+    <style>
+      .trace {
+        min-width: 900px;
+        width: 100%;
+      }
+      .trace tr:hover {
+        background-color: #D9EDF7!important;
+      }
+      .trace tr td {
+        width: 14%;
+        white-space: nowrap;
+        padding: 2px;
+        border-right: 1px solid #eee;
+      }
+      .trace tr td.details {
+        width: 10%;
+        padding-right: 20px;
+      }
+      .trace.cursor_pointer_on_hover {
+        cursor: pointer;
+      }
+      .trace .level {
+        width: 10%;
+        font-weight: bold;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .duration {
+        width: 25px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #c6eff3;
+        border-radius: 4px;
+        font-size: 10px;
+      }
+      .duration div{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/ng-template"  id="tree_item_renderer.html">
+
+        <div ng-init="hide_children=false">
+          <table class="trace cursor_pointer_on_hover">
+            <tr>
+              <td class="level" style="padding-left:{{data.level * 5}}px;">
+                <button type="button" class="btn btn-default btn-xs" ng-disabled="data.is_leaf" ng-click="hide_children=!hide_children">
+                  <span class="glyphicon glyphicon-{{ (data.is_leaf) ? 'cloud' : ((hide_children) ? 'plus': 'minus')}}"></span>
+                  {{data.level || 0}}
+                </button>
+              </td>
+              <td ng-click="display(data);" class="text-center">
+               <div class="duration" style="width: {{get_width(data)}}%; margin-left: {{get_started(data)}}%">
+                  <div>{{data.info.finished - data.info.started}} ms</div>
+                </div>
+              </td>
+              <td ng-click="display(data);" class="{{ is_important(data) ? 'bold' : ''}} text-right" > {{data.info.name}} </td>
+              <td ng-click="display(data);"> {{data.info.project  || "n/a"}}</td>
+              <td ng-click="display(data);"> {{data.info.service  || "n/a" }} </td>
+              <td ng-click="display(data);"> {{data.info.host || "n/a"}} </td>
+              <td class="details">
+                <a href="#" ng-click="display(data);"> Details </a>
+              </td>
+            </tr>
+          </table>
+
+        <div ng-hide="hide_children">
+          <div ng-repeat="data in data.children" ng-include="'tree_item_renderer.html'"> </div>
+        </div>
+      </div>
+
+    </script>
+
+    <script>
+      angular.module("Application", ['ui.bootstrap']);
+
+      function ProfilerCtlr($scope, $modal) {
+
+        var convert_input = function(input, level){
+          level = (level) ? level : 0;
+          input.level = level;
+          input.is_leaf = !input.children.length
+
+          for (var i=0; i < input.children.length; i++)
+            convert_input(input.children[i], level + 1);
+          return input;
+        }
+
+        $scope.get_width = function(data){
+
+          var full_duration = $scope.tree[0].info.finished;
+          var duration = (data.info.finished - data.info.started) * 100.0 / full_duration;
+          return (duration >= 0.5) ? duration : 0.5;
+        }
+
+        $scope.get_started = function(data) {
+          var full_duration = $scope.tree[0].info.finished;
+          return data.info.started * 100.0 / full_duration;
+        }
+
+        $scope.is_important = function(data) {
+          return ["total", "wsgi", "rpc"].indexOf(data.info.name) != -1;
+        }
+
+        $scope.display = function(data){
+          var info = angular.copy(data.info);
+
+          var metadata = {};
+          angular.forEach(info, function(value, key) {
+            var parts = key.split(".");
+            if (parts[0] == "meta"){
+
+              if (parts.length == 2){
+                this[parts[1]] = value;
+              }
+              else{
+                var group_name = parts[1];
+                if (!(group_name in this))
+                  this[group_name] = {};
+
+                this[group_name][parts[2]] = value;
+              }
+            };
+          }, metadata);
+
+          info["duration"] = info["finished"] - info["started"]
+          info["metadata"] = "<pre>" + JSON.stringify(metadata, "", 4) + "</pre>"
+
+          var trace_data = "<div class='row'>"
+          columns = ["name", "project", "service", "host", "started",
+                     "finished", "duration", "metadata"];
+          for (var i = 0; i < columns.length; i++){
+            trace_data += "<div class='col-md-2 text-right text-capitalize'><strong>" + columns[i] + " </strong></div>";
+            trace_data += "<div class='col-md-10 text-left'>" + info[columns[i]] + "</div>";
+          }
+          trace_data += "</div>";
+
+          var output = (
+            '<div class="modal-header"> Trace Point Details </div>' +
+            '<div class="modal-body">' + trace_data + '</div>' +
+            '<div class="modal-footer"> <span class="glyphicon glyphicon-cloud </div>'
+          );
+
+          var modal_instance = $modal.open({
+            "template": output,
+            "size": "lg"
+          });
+        }
+
+        $scope.tree = [convert_input(OSProfilerData)];
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div ng-controller="ProfilerCtlr">
+      <table class="trace">
+        <tr class="bold text-left" style="border-bottom: solid 1px gray">
+          <td class="level">Levels</td>
+          <td>Duration</td>
+          <td class="text-right">Type</td>
+          <td>Project</td>
+          <td>Service</td>
+          <td>Host</td>
+          <td class="details">Details</td>
+        </tr>
+      </table>
+      <div ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></div>
+    </div>
+
+  </body>
+
+</html>

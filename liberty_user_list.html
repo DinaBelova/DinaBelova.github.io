@@ -1,0 +1,2166 @@
+<!doctype html>
+<html ng-app="Application">
+
+  <head>
+    <script>
+        var OSProfilerData = {
+  "info": {
+    "started": 0, 
+    "finished": 756, 
+    "name": "total"
+  }, 
+  "children": [
+    {
+      "info": {
+        "name": "wsgi", 
+        "service": "main", 
+        "started": 0, 
+        "meta.raw_payload.wsgi-stop": {
+          "info": {
+            "host": "ubuntu"
+          }, 
+          "name": "wsgi-stop", 
+          "service": "main", 
+          "timestamp": "2016-03-27T09:32:16.694746", 
+          "trace_id": "ca1196c3-6f66-4889-98b1-02f5e0d859f1", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }, 
+        "finished": 19, 
+        "project": "keystone", 
+        "host": "ubuntu", 
+        "meta.raw_payload.wsgi-start": {
+          "info": {
+            "host": "ubuntu", 
+            "request": {
+              "path": "/v2.0", 
+              "scheme": "http", 
+              "method": "GET", 
+              "query": ""
+            }
+          }, 
+          "name": "wsgi-start", 
+          "service": "main", 
+          "timestamp": "2016-03-27T09:32:16.674807", 
+          "trace_id": "ca1196c3-6f66-4889-98b1-02f5e0d859f1", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }
+      }, 
+      "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+      "trace_id": "ca1196c3-6f66-4889-98b1-02f5e0d859f1", 
+      "children": []
+    }, 
+    {
+      "info": {
+        "name": "wsgi", 
+        "service": "main", 
+        "started": 53, 
+        "meta.raw_payload.wsgi-stop": {
+          "info": {
+            "host": "ubuntu"
+          }, 
+          "name": "wsgi-stop", 
+          "service": "main", 
+          "timestamp": "2016-03-27T09:32:17.048580", 
+          "trace_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }, 
+        "finished": 373, 
+        "project": "keystone", 
+        "host": "ubuntu", 
+        "meta.raw_payload.wsgi-start": {
+          "info": {
+            "host": "ubuntu", 
+            "request": {
+              "path": "/v2.0/tokens", 
+              "scheme": "http", 
+              "method": "POST", 
+              "query": ""
+            }
+          }, 
+          "name": "wsgi-start", 
+          "service": "main", 
+          "timestamp": "2016-03-27T09:32:16.728328", 
+          "trace_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }
+      }, 
+      "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+      "trace_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+      "children": [
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 75, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.757842", 
+              "trace_id": "6273b2da-e772-4437-94ca-2bc3857f719f", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 83, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_user_by_name', (<keystone.identity.core.Manager object at 0x7ff1ce146750>, u'admin', 'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.749936", 
+              "trace_id": "6273b2da-e772-4437-94ca-2bc3857f719f", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "6273b2da-e772-4437-94ca-2bc3857f719f", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.764365", 
+              "trace_id": "cf20e402-17f5-438d-a744-7e139ac5497e", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 89, 
+            "finished": 98, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.773333", 
+              "trace_id": "cf20e402-17f5-438d-a744-7e139ac5497e", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "cf20e402-17f5-438d-a744-7e139ac5497e", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "a40e879b140d4dada0fdb4663fce4553"
+                  ], 
+                  "statement": "SELECT user.id AS user_id, user.name AS user_name, user.domain_id AS user_domain_id, user.password AS user_password, user.enabled AS user_enabled, user.extra AS user_extra, user.default_project_id AS user_default_project_id \nFROM user \nWHERE user.id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.778272", 
+              "trace_id": "f1c6fb0d-f7a2-418c-8dd1-9e6e2090a510", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 103, 
+            "finished": 125, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.799915", 
+              "trace_id": "f1c6fb0d-f7a2-418c-8dd1-9e6e2090a510", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "f1c6fb0d-f7a2-418c-8dd1-9e6e2090a510", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 138, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.826004", 
+              "trace_id": "24d6aee3-accf-41bf-8460-3626482ad9e8", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 151, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_project_by_name', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'admin', 'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.813620", 
+              "trace_id": "24d6aee3-accf-41bf-8460-3626482ad9e8", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "24d6aee3-accf-41bf-8460-3626482ad9e8", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 166, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.847625", 
+              "trace_id": "f1930f67-6397-4b7e-a14d-832cc9d96132", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 172, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_project', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'741271ef2a554242af037d66d6682e3f'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.840811", 
+              "trace_id": "f1930f67-6397-4b7e-a14d-832cc9d96132", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "f1930f67-6397-4b7e-a14d-832cc9d96132", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 175, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.855997", 
+              "trace_id": "1b53de25-ab97-495e-997e-6f5ef23c8ca2", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 181, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_project', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'741271ef2a554242af037d66d6682e3f'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.850681", 
+              "trace_id": "1b53de25-ab97-495e-997e-6f5ef23c8ca2", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "1b53de25-ab97-495e-997e-6f5ef23c8ca2", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.867010", 
+              "trace_id": "6f0ab05f-62d0-4c62-8ab0-2acc3ba2d104", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 192, 
+            "finished": 196, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.871406", 
+              "trace_id": "6f0ab05f-62d0-4c62-8ab0-2acc3ba2d104", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "6f0ab05f-62d0-4c62-8ab0-2acc3ba2d104", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "UserProject", 
+                    "a40e879b140d4dada0fdb4663fce4553", 
+                    "741271ef2a554242af037d66d6682e3f"
+                  ], 
+                  "statement": "SELECT assignment.type AS assignment_type, assignment.actor_id AS assignment_actor_id, assignment.target_id AS assignment_target_id, assignment.role_id AS assignment_role_id, assignment.inherited AS assignment_inherited \nFROM assignment \nWHERE assignment.type = %s AND assignment.actor_id = %s AND assignment.target_id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.880046", 
+              "trace_id": "61d79091-8376-47f6-ade4-029a2cc3645e", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 205, 
+            "finished": 215, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.890029", 
+              "trace_id": "61d79091-8376-47f6-ade4-029a2cc3645e", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "61d79091-8376-47f6-ade4-029a2cc3645e", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.895752", 
+              "trace_id": "dfe9fc6e-a836-4bdc-8286-c88252aa5849", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 220, 
+            "finished": 225, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.900191", 
+              "trace_id": "dfe9fc6e-a836-4bdc-8286-c88252aa5849", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "dfe9fc6e-a836-4bdc-8286-c88252aa5849", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "a40e879b140d4dada0fdb4663fce4553"
+                  ], 
+                  "statement": "SELECT user.id AS user_id, user.name AS user_name, user.domain_id AS user_domain_id, user.password AS user_password, user.enabled AS user_enabled, user.extra AS user_extra, user.default_project_id AS user_default_project_id \nFROM user \nWHERE user.id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.905917", 
+              "trace_id": "371dbfe2-9dd1-4004-a939-6b9cbb3e5c59", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 231, 
+            "finished": 236, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.911560", 
+              "trace_id": "371dbfe2-9dd1-4004-a939-6b9cbb3e5c59", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "371dbfe2-9dd1-4004-a939-6b9cbb3e5c59", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.923313", 
+              "trace_id": "1e63cb86-c9e3-4792-9a9f-35187157666d", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 248, 
+            "finished": 252, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.926863", 
+              "trace_id": "1e63cb86-c9e3-4792-9a9f-35187157666d", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "1e63cb86-c9e3-4792-9a9f-35187157666d", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "a40e879b140d4dada0fdb4663fce4553"
+                  ], 
+                  "statement": "SELECT `group`.id AS group_id, `group`.name AS group_name, `group`.domain_id AS group_domain_id, `group`.description AS group_description, `group`.extra AS group_extra \nFROM `group` INNER JOIN user_group_membership ON `group`.id = user_group_membership.group_id \nWHERE user_group_membership.user_id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.932071", 
+              "trace_id": "c8a97e23-df4a-4918-ade3-49534aa6c19f", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 257, 
+            "finished": 265, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.940234", 
+              "trace_id": "c8a97e23-df4a-4918-ade3-49534aa6c19f", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "c8a97e23-df4a-4918-ade3-49534aa6c19f", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 269, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.950989", 
+              "trace_id": "9b2cab6f-1001-4c37-a655-3bd7cbb072b3", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 276, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_domain', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.944131", 
+              "trace_id": "9b2cab6f-1001-4c37-a655-3bd7cbb072b3", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "9b2cab6f-1001-4c37-a655-3bd7cbb072b3", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 280, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.963268", 
+              "trace_id": "1a665711-7b92-493b-884b-db997bb5b954", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 288, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_domain', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.955783", 
+              "trace_id": "1a665711-7b92-493b-884b-db997bb5b954", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "1a665711-7b92-493b-884b-db997bb5b954", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.975775", 
+              "trace_id": "6ae47c5d-ccc7-4a79-b9db-54097e95e999", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 300, 
+            "finished": 306, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.981082", 
+              "trace_id": "6ae47c5d-ccc7-4a79-b9db-54097e95e999", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "6ae47c5d-ccc7-4a79-b9db-54097e95e999", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT endpoint.id AS endpoint_id, endpoint.legacy_endpoint_id AS endpoint_legacy_endpoint_id, endpoint.interface AS endpoint_interface, endpoint.region_id AS endpoint_region_id, endpoint.service_id AS endpoint_service_id, endpoint.url AS endpoint_url, endpoint.enabled AS endpoint_enabled, endpoint.extra AS endpoint_extra, service_1.id AS service_1_id, service_1.type AS service_1_type, service_1.enabled AS service_1_enabled, service_1.extra AS service_1_extra \nFROM endpoint LEFT OUTER JOIN service AS service_1 ON service_1.id = endpoint.service_id \nWHERE endpoint.enabled = true"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.987708", 
+              "trace_id": "6aa62725-23bf-4a81-8f70-79c977ad1f0e", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 312, 
+            "finished": 322, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:16.996992", 
+              "trace_id": "6aa62725-23bf-4a81-8f70-79c977ad1f0e", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "6aa62725-23bf-4a81-8f70-79c977ad1f0e", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 332, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.013019", 
+              "trace_id": "e70ab792-e226-4140-aa8b-519b6213b3cd", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 338, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_role', (<keystone.assignment.core.RoleManager object at 0x7ff1cde7d210>, u'68e61c80e05244f2ab9af0a9e2e0320a'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.007011", 
+              "trace_id": "e70ab792-e226-4140-aa8b-519b6213b3cd", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "e70ab792-e226-4140-aa8b-519b6213b3cd", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.020290", 
+              "trace_id": "35f865cd-8467-4b1b-a8a8-931c0556f110", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 345, 
+            "finished": 350, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.025264", 
+              "trace_id": "35f865cd-8467-4b1b-a8a8-931c0556f110", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "35f865cd-8467-4b1b-a8a8-931c0556f110", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "17e3681b7228408cbfde78d80d51d7e4", 
+                    "2016-03-27T10:32:16.000000", 
+                    "{\"bind\": null, \"token_data\": {\"access\": {\"token\": {\"issued_at\": \"2016-03-27T09:32:17.017704\", \"expires\": \"2016-03-27T10:32:16Z\", \"id\": \"17e3681b7228408cbfde78d80d51d7e4\", \"tenant\": {\"id\": \"741271ef2a554242af037d66d6682e3f\", \"enabled\": true, \"description\": \"\", \"name\": \"admin\"}, \"audit_ids\": [\"W9jBSYCATKSTezSkNs76Tw\"]}, \"serviceCatalog\": [{\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8774/v2.1/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"0e60da7111b2415fa82ca2f265f03257\", \"internalURL\": \"http://10.0.2.15:8774/v2.1/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8774/v2.1/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"compute\", \"name\": \"nova\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:9696/\", \"region\": \"RegionOne\", \"id\": \"7ee1c6c920a64edb98f37d5ef9610b4a\", \"internalURL\": \"http://10.0.2.15:9696/\", \"publicURL\": \"http://10.0.2.15:9696/\"}], \"endpoints_links\": [], \"type\": \"network\", \"name\": \"neutron\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8776/v2/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"6bb97105ea2e489bae6f2c96a33fb1cc\", \"internalURL\": \"http://10.0.2.15:8776/v2/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8776/v2/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"volumev2\", \"name\": \"cinderv2\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:9292\", \"region\": \"RegionOne\", \"id\": \"21f2dc7058b7475a90a6cfae9bece500\", \"internalURL\": \"http://10.0.2.15:9292\", \"publicURL\": \"http://10.0.2.15:9292\"}], \"endpoints_links\": [], \"type\": \"image\", \"name\": \"glance\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8774/v2/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"a2381d9a78fb47998e2a6296fad2cb5f\", \"internalURL\": \"http://10.0.2.15:8774/v2/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8774/v2/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"compute_legacy\", \"name\": \"nova_legacy\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8777\", \"region\": \"RegionOne\", \"id\": \"330fc534e5a54ef281fa3e80831edc3d\", \"internalURL\": \"http://10.0.2.15:8777\", \"publicURL\": \"http://10.0.2.15:8777\"}], \"endpoints_links\": [], \"type\": \"metering\", \"name\": \"ceilometer\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8776/v1/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"42f9dd589d5f42e284e99cc9e0984b3f\", \"internalURL\": \"http://10.0.2.15:8776/v1/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8776/v1/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"volume\", \"name\": \"cinder\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8773/\", \"region\": \"RegionOne\", \"id\": \"aab74fcdf91945da9e45054f0b1cc29c\", \"internalURL\": \"http://10.0.2.15:8773/\", \"publicURL\": \"http://10.0.2.15:8773/\"}], \"endpoints_links\": [], \"type\": \"ec2\", \"name\": \"ec2\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:35357/v2.0\", \"region\": \"RegionOne\", \"id\": \"5cf00c009bbc42a5a99260cfd544ca76\", \"internalURL\": \"http://10.0.2.15:5000/v2.0\", \"publicURL\": \"http://10.0.2.15:5000/v2.0\"}], \"endpoints_links\": [], \"type\": \"identity\", \"name\": \"keystone\"}], \"user\": {\"username\": \"admin\", \"roles_links\": [], \"id\": \"a40e879b140d4dada0fdb4663fce4553\", \"roles\": [{\"name\": \"admin\"}], \"name\": \"admin\"}, \"metadata\": {\"is_admin\": 0, \"roles\": [\"68e61c80e05244f2ab9af0a9e2e0320a\"]}}}, \"user\": {\"username\": \"admin\", \"enabled\": true, \"name\": \"admin\", \"id\": \"a40e879b140d4dada0fdb4663fce4553\"}, \"key\": \"17e3681b7228408cbfde78d80d51d7e4\", \"token_version\": \"v2.0\", \"tenant\": {\"id\": \"741271ef2a554242af037d66d6682e3f\", \"enabled\": true, \"description\": \"\", \"name\": \"admin\"}, \"metadata\": {\"roles\": [\"68e61c80e05244f2ab9af0a9e2e0320a\"]}}", 
+                    1, 
+                    "a40e879b140d4dada0fdb4663fce4553", 
+                    null
+                  ], 
+                  "statement": "INSERT INTO token (id, expires, extra, valid, user_id, trust_id) VALUES (%s, %s, %s, %s, %s, %s)"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.031489", 
+              "trace_id": "5933176c-609a-4ef8-af6c-3633760d1bb1", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 356, 
+            "finished": 362, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.037559", 
+              "trace_id": "5933176c-609a-4ef8-af6c-3633760d1bb1", 
+              "project": "keystone", 
+              "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7868dd35-4b48-45ce-8a6d-4a6d5990f752", 
+          "trace_id": "5933176c-609a-4ef8-af6c-3633760d1bb1", 
+          "children": []
+        }
+      ]
+    }, 
+    {
+      "info": {
+        "name": "wsgi", 
+        "service": "main", 
+        "started": 385, 
+        "meta.raw_payload.wsgi-stop": {
+          "info": {
+            "host": "ubuntu"
+          }, 
+          "name": "wsgi-stop", 
+          "service": "main", 
+          "timestamp": "2016-03-27T09:32:17.307673", 
+          "trace_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }, 
+        "finished": 632, 
+        "project": "keystone", 
+        "host": "ubuntu", 
+        "meta.raw_payload.wsgi-start": {
+          "info": {
+            "host": "ubuntu", 
+            "request": {
+              "path": "/v2.0/tokens", 
+              "scheme": "http", 
+              "method": "POST", 
+              "query": ""
+            }
+          }, 
+          "name": "wsgi-start", 
+          "service": "main", 
+          "timestamp": "2016-03-27T09:32:17.060798", 
+          "trace_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }
+      }, 
+      "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+      "trace_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+      "children": [
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 394, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.075059", 
+              "trace_id": "d447e2b5-d78c-4a96-9e0a-2d8a8ed248bd", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 400, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_user_by_name', (<keystone.identity.core.Manager object at 0x7ff1ce146750>, u'admin', 'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.069420", 
+              "trace_id": "d447e2b5-d78c-4a96-9e0a-2d8a8ed248bd", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "d447e2b5-d78c-4a96-9e0a-2d8a8ed248bd", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.080408", 
+              "trace_id": "32f3f271-6ade-4dbc-b10b-aff645174f98", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 405, 
+            "finished": 409, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.084135", 
+              "trace_id": "32f3f271-6ade-4dbc-b10b-aff645174f98", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "32f3f271-6ade-4dbc-b10b-aff645174f98", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "a40e879b140d4dada0fdb4663fce4553"
+                  ], 
+                  "statement": "SELECT user.id AS user_id, user.name AS user_name, user.domain_id AS user_domain_id, user.password AS user_password, user.enabled AS user_enabled, user.extra AS user_extra, user.default_project_id AS user_default_project_id \nFROM user \nWHERE user.id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.088053", 
+              "trace_id": "a670faa4-217f-4c88-a3e5-921fc572ffd1", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 413, 
+            "finished": 421, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.096670", 
+              "trace_id": "a670faa4-217f-4c88-a3e5-921fc572ffd1", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "a670faa4-217f-4c88-a3e5-921fc572ffd1", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 437, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.116794", 
+              "trace_id": "7e3fce39-d597-418f-b70d-4d908eabd0fc", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 441, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_project_by_name', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'admin', 'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.112309", 
+              "trace_id": "7e3fce39-d597-418f-b70d-4d908eabd0fc", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "7e3fce39-d597-418f-b70d-4d908eabd0fc", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 451, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.138864", 
+              "trace_id": "1e78b86b-621e-4eb3-9150-cdbbdc809f5f", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 464, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_project', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'741271ef2a554242af037d66d6682e3f'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.125866", 
+              "trace_id": "1e78b86b-621e-4eb3-9150-cdbbdc809f5f", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "1e78b86b-621e-4eb3-9150-cdbbdc809f5f", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 470, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.150766", 
+              "trace_id": "89c1901c-9427-46f5-9f26-de8f3d478f93", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 475, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_project', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'741271ef2a554242af037d66d6682e3f'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.144889", 
+              "trace_id": "89c1901c-9427-46f5-9f26-de8f3d478f93", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "89c1901c-9427-46f5-9f26-de8f3d478f93", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.156823", 
+              "trace_id": "2244e731-d05d-4151-91ef-848eca7af12a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 482, 
+            "finished": 486, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.161720", 
+              "trace_id": "2244e731-d05d-4151-91ef-848eca7af12a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "2244e731-d05d-4151-91ef-848eca7af12a", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "UserProject", 
+                    "a40e879b140d4dada0fdb4663fce4553", 
+                    "741271ef2a554242af037d66d6682e3f"
+                  ], 
+                  "statement": "SELECT assignment.type AS assignment_type, assignment.actor_id AS assignment_actor_id, assignment.target_id AS assignment_target_id, assignment.role_id AS assignment_role_id, assignment.inherited AS assignment_inherited \nFROM assignment \nWHERE assignment.type = %s AND assignment.actor_id = %s AND assignment.target_id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.165478", 
+              "trace_id": "ce164521-68f0-4bfa-83be-169c66ed890d", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 490, 
+            "finished": 494, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.169630", 
+              "trace_id": "ce164521-68f0-4bfa-83be-169c66ed890d", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "ce164521-68f0-4bfa-83be-169c66ed890d", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.176381", 
+              "trace_id": "09a005a9-178e-46ab-8eb0-7b24ee4cbec8", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 501, 
+            "finished": 505, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.179923", 
+              "trace_id": "09a005a9-178e-46ab-8eb0-7b24ee4cbec8", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "09a005a9-178e-46ab-8eb0-7b24ee4cbec8", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "a40e879b140d4dada0fdb4663fce4553"
+                  ], 
+                  "statement": "SELECT user.id AS user_id, user.name AS user_name, user.domain_id AS user_domain_id, user.password AS user_password, user.enabled AS user_enabled, user.extra AS user_extra, user.default_project_id AS user_default_project_id \nFROM user \nWHERE user.id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.184928", 
+              "trace_id": "fadbaeec-5489-4831-b7c1-9a6747512486", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 510, 
+            "finished": 516, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.191306", 
+              "trace_id": "fadbaeec-5489-4831-b7c1-9a6747512486", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "fadbaeec-5489-4831-b7c1-9a6747512486", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.198076", 
+              "trace_id": "90904e7a-3ac2-4eeb-a125-83f91532133a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 523, 
+            "finished": 528, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.203248", 
+              "trace_id": "90904e7a-3ac2-4eeb-a125-83f91532133a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "90904e7a-3ac2-4eeb-a125-83f91532133a", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "a40e879b140d4dada0fdb4663fce4553"
+                  ], 
+                  "statement": "SELECT `group`.id AS group_id, `group`.name AS group_name, `group`.domain_id AS group_domain_id, `group`.description AS group_description, `group`.extra AS group_extra \nFROM `group` INNER JOIN user_group_membership ON `group`.id = user_group_membership.group_id \nWHERE user_group_membership.user_id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.208672", 
+              "trace_id": "d7c4323d-8b62-46fb-90a6-b2e2e954f48a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 533, 
+            "finished": 540, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.215390", 
+              "trace_id": "d7c4323d-8b62-46fb-90a6-b2e2e954f48a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "d7c4323d-8b62-46fb-90a6-b2e2e954f48a", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 545, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.225626", 
+              "trace_id": "ee658d12-48fc-403b-9c8a-27e707a07f3a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 550, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_domain', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.220032", 
+              "trace_id": "ee658d12-48fc-403b-9c8a-27e707a07f3a", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "ee658d12-48fc-403b-9c8a-27e707a07f3a", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 553, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.234094", 
+              "trace_id": "c71d8cfa-1548-4636-a203-a79ee264836f", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 559, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_domain', (<keystone.resource.core.Manager object at 0x7ff1cdeca190>, u'default'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.228443", 
+              "trace_id": "c71d8cfa-1548-4636-a203-a79ee264836f", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "c71d8cfa-1548-4636-a203-a79ee264836f", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.243189", 
+              "trace_id": "e4c94fc4-c3ea-4232-9ad5-99354fcc3bbc", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 568, 
+            "finished": 572, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.247351", 
+              "trace_id": "e4c94fc4-c3ea-4232-9ad5-99354fcc3bbc", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "e4c94fc4-c3ea-4232-9ad5-99354fcc3bbc", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT endpoint.id AS endpoint_id, endpoint.legacy_endpoint_id AS endpoint_legacy_endpoint_id, endpoint.interface AS endpoint_interface, endpoint.region_id AS endpoint_region_id, endpoint.service_id AS endpoint_service_id, endpoint.url AS endpoint_url, endpoint.enabled AS endpoint_enabled, endpoint.extra AS endpoint_extra, service_1.id AS service_1_id, service_1.type AS service_1_type, service_1.enabled AS service_1_enabled, service_1.extra AS service_1_extra \nFROM endpoint LEFT OUTER JOIN service AS service_1 ON service_1.id = endpoint.service_id \nWHERE endpoint.enabled = true"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.253573", 
+              "trace_id": "c6e9bf5b-a888-4f4c-b712-8753ef86ad43", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 578, 
+            "finished": 584, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.259362", 
+              "trace_id": "c6e9bf5b-a888-4f4c-b712-8753ef86ad43", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "c6e9bf5b-a888-4f4c-b712-8753ef86ad43", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "main", 
+            "started": 593, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.272759", 
+              "trace_id": "ac1e7a17-f58b-4b73-9e8a-c59f9f15d29d", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 597, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('get_role', (<keystone.assignment.core.RoleManager object at 0x7ff1cde7d210>, u'68e61c80e05244f2ab9af0a9e2e0320a'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.268393", 
+              "trace_id": "ac1e7a17-f58b-4b73-9e8a-c59f9f15d29d", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "ac1e7a17-f58b-4b73-9e8a-c59f9f15d29d", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.281745", 
+              "trace_id": "d751964e-a5fc-41d1-bbbc-04249b211460", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 606, 
+            "finished": 609, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.284222", 
+              "trace_id": "d751964e-a5fc-41d1-bbbc-04249b211460", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "d751964e-a5fc-41d1-bbbc-04249b211460", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "b7cf92a4467145c888974097112c2c3d", 
+                    "2016-03-27T10:32:17.000000", 
+                    "{\"bind\": null, \"token_data\": {\"access\": {\"token\": {\"issued_at\": \"2016-03-27T09:32:17.279270\", \"expires\": \"2016-03-27T10:32:17Z\", \"id\": \"b7cf92a4467145c888974097112c2c3d\", \"tenant\": {\"id\": \"741271ef2a554242af037d66d6682e3f\", \"enabled\": true, \"description\": \"\", \"name\": \"admin\"}, \"audit_ids\": [\"II-gnNSnSgiFOtkph2JGKw\"]}, \"serviceCatalog\": [{\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8774/v2.1/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"0e60da7111b2415fa82ca2f265f03257\", \"internalURL\": \"http://10.0.2.15:8774/v2.1/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8774/v2.1/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"compute\", \"name\": \"nova\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:9696/\", \"region\": \"RegionOne\", \"id\": \"7ee1c6c920a64edb98f37d5ef9610b4a\", \"internalURL\": \"http://10.0.2.15:9696/\", \"publicURL\": \"http://10.0.2.15:9696/\"}], \"endpoints_links\": [], \"type\": \"network\", \"name\": \"neutron\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8776/v2/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"6bb97105ea2e489bae6f2c96a33fb1cc\", \"internalURL\": \"http://10.0.2.15:8776/v2/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8776/v2/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"volumev2\", \"name\": \"cinderv2\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:9292\", \"region\": \"RegionOne\", \"id\": \"21f2dc7058b7475a90a6cfae9bece500\", \"internalURL\": \"http://10.0.2.15:9292\", \"publicURL\": \"http://10.0.2.15:9292\"}], \"endpoints_links\": [], \"type\": \"image\", \"name\": \"glance\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8774/v2/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"a2381d9a78fb47998e2a6296fad2cb5f\", \"internalURL\": \"http://10.0.2.15:8774/v2/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8774/v2/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"compute_legacy\", \"name\": \"nova_legacy\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8777\", \"region\": \"RegionOne\", \"id\": \"330fc534e5a54ef281fa3e80831edc3d\", \"internalURL\": \"http://10.0.2.15:8777\", \"publicURL\": \"http://10.0.2.15:8777\"}], \"endpoints_links\": [], \"type\": \"metering\", \"name\": \"ceilometer\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8776/v1/741271ef2a554242af037d66d6682e3f\", \"region\": \"RegionOne\", \"id\": \"42f9dd589d5f42e284e99cc9e0984b3f\", \"internalURL\": \"http://10.0.2.15:8776/v1/741271ef2a554242af037d66d6682e3f\", \"publicURL\": \"http://10.0.2.15:8776/v1/741271ef2a554242af037d66d6682e3f\"}], \"endpoints_links\": [], \"type\": \"volume\", \"name\": \"cinder\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:8773/\", \"region\": \"RegionOne\", \"id\": \"aab74fcdf91945da9e45054f0b1cc29c\", \"internalURL\": \"http://10.0.2.15:8773/\", \"publicURL\": \"http://10.0.2.15:8773/\"}], \"endpoints_links\": [], \"type\": \"ec2\", \"name\": \"ec2\"}, {\"endpoints\": [{\"adminURL\": \"http://10.0.2.15:35357/v2.0\", \"region\": \"RegionOne\", \"id\": \"5cf00c009bbc42a5a99260cfd544ca76\", \"internalURL\": \"http://10.0.2.15:5000/v2.0\", \"publicURL\": \"http://10.0.2.15:5000/v2.0\"}], \"endpoints_links\": [], \"type\": \"identity\", \"name\": \"keystone\"}], \"user\": {\"username\": \"admin\", \"roles_links\": [], \"id\": \"a40e879b140d4dada0fdb4663fce4553\", \"roles\": [{\"name\": \"admin\"}], \"name\": \"admin\"}, \"metadata\": {\"is_admin\": 0, \"roles\": [\"68e61c80e05244f2ab9af0a9e2e0320a\"]}}}, \"user\": {\"username\": \"admin\", \"enabled\": true, \"name\": \"admin\", \"id\": \"a40e879b140d4dada0fdb4663fce4553\"}, \"key\": \"b7cf92a4467145c888974097112c2c3d\", \"token_version\": \"v2.0\", \"tenant\": {\"id\": \"741271ef2a554242af037d66d6682e3f\", \"enabled\": true, \"description\": \"\", \"name\": \"admin\"}, \"metadata\": {\"roles\": [\"68e61c80e05244f2ab9af0a9e2e0320a\"]}}", 
+                    1, 
+                    "a40e879b140d4dada0fdb4663fce4553", 
+                    null
+                  ], 
+                  "statement": "INSERT INTO token (id, expires, extra, valid, user_id, trust_id) VALUES (%s, %s, %s, %s, %s, %s)"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.287387", 
+              "trace_id": "b159a4fb-a39e-46bd-87c2-c6e0e8740f60", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "main", 
+            "started": 612, 
+            "finished": 620, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "main", 
+              "timestamp": "2016-03-27T09:32:17.294949", 
+              "trace_id": "b159a4fb-a39e-46bd-87c2-c6e0e8740f60", 
+              "project": "keystone", 
+              "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "f26567a2-9197-4d14-86ba-3e37ddcc4c93", 
+          "trace_id": "b159a4fb-a39e-46bd-87c2-c6e0e8740f60", 
+          "children": []
+        }
+      ]
+    }, 
+    {
+      "info": {
+        "name": "wsgi", 
+        "service": "admin", 
+        "started": 644, 
+        "meta.raw_payload.wsgi-stop": {
+          "info": {
+            "host": "ubuntu"
+          }, 
+          "name": "wsgi-stop", 
+          "service": "admin", 
+          "timestamp": "2016-03-27T09:32:17.324012", 
+          "trace_id": "e7c9eb10-3557-4330-a5af-193f519cce66", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }, 
+        "finished": 649, 
+        "project": "keystone", 
+        "host": "ubuntu", 
+        "meta.raw_payload.wsgi-start": {
+          "info": {
+            "host": "ubuntu", 
+            "request": {
+              "path": "/", 
+              "scheme": "http", 
+              "method": "GET", 
+              "query": ""
+            }
+          }, 
+          "name": "wsgi-start", 
+          "service": "admin", 
+          "timestamp": "2016-03-27T09:32:17.319126", 
+          "trace_id": "e7c9eb10-3557-4330-a5af-193f519cce66", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }
+      }, 
+      "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+      "trace_id": "e7c9eb10-3557-4330-a5af-193f519cce66", 
+      "children": []
+    }, 
+    {
+      "info": {
+        "name": "wsgi", 
+        "service": "admin", 
+        "started": 658, 
+        "meta.raw_payload.wsgi-stop": {
+          "info": {
+            "host": "ubuntu"
+          }, 
+          "name": "wsgi-stop", 
+          "service": "admin", 
+          "timestamp": "2016-03-27T09:32:17.431728", 
+          "trace_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }, 
+        "finished": 756, 
+        "project": "keystone", 
+        "host": "ubuntu", 
+        "meta.raw_payload.wsgi-start": {
+          "info": {
+            "host": "ubuntu", 
+            "request": {
+              "path": "/v2.0/users", 
+              "scheme": "http", 
+              "method": "GET", 
+              "query": ""
+            }
+          }, 
+          "name": "wsgi-start", 
+          "service": "admin", 
+          "timestamp": "2016-03-27T09:32:17.332930", 
+          "trace_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+          "project": "keystone", 
+          "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+          "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+        }
+      }, 
+      "parent_id": "b82be140-a480-4765-8038-336f3e77b591", 
+      "trace_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+      "children": [
+        {
+          "info": {
+            "name": "cache", 
+            "service": "admin", 
+            "started": 684, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.379757", 
+              "trace_id": "13b2dc1c-ce62-4ce0-86b2-f682f5a9d6c4", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 704, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('_validate_token', (<keystone.token.provider.Manager object at 0x7ff1cde3f710>, 'b7cf92a4467145c888974097112c2c3d'), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.359371", 
+              "trace_id": "13b2dc1c-ce62-4ce0-86b2-f682f5a9d6c4", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+          "trace_id": "13b2dc1c-ce62-4ce0-86b2-f682f5a9d6c4", 
+          "children": [
+            {
+              "info": {
+                "name": "cache", 
+                "service": "admin", 
+                "started": 690, 
+                "meta.raw_payload.cache-stop": {
+                  "info": {
+                    "host": "ubuntu"
+                  }, 
+                  "name": "cache-stop", 
+                  "service": "admin", 
+                  "timestamp": "2016-03-27T09:32:17.372202", 
+                  "trace_id": "5f12b86c-6ed9-4b2a-aeac-d6d9363733b0", 
+                  "project": "keystone", 
+                  "parent_id": "13b2dc1c-ce62-4ce0-86b2-f682f5a9d6c4", 
+                  "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+                }, 
+                "finished": 697, 
+                "project": "keystone", 
+                "host": "ubuntu", 
+                "meta.raw_payload.cache-start": {
+                  "info": {
+                    "host": "ubuntu", 
+                    "fn_info": "('_get_token', (<keystone.token.persistence.core.PersistenceManager object at 0x7ff1d7b6df90>, 'b7cf92a4467145c888974097112c2c3d'), {})"
+                  }, 
+                  "name": "cache-start", 
+                  "service": "admin", 
+                  "timestamp": "2016-03-27T09:32:17.365227", 
+                  "trace_id": "5f12b86c-6ed9-4b2a-aeac-d6d9363733b0", 
+                  "project": "keystone", 
+                  "parent_id": "13b2dc1c-ce62-4ce0-86b2-f682f5a9d6c4", 
+                  "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+                }
+              }, 
+              "parent_id": "13b2dc1c-ce62-4ce0-86b2-f682f5a9d6c4", 
+              "trace_id": "5f12b86c-6ed9-4b2a-aeac-d6d9363733b0", 
+              "children": []
+            }
+          ]
+        }, 
+        {
+          "info": {
+            "name": "cache", 
+            "service": "admin", 
+            "started": 709, 
+            "meta.raw_payload.cache-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "cache-stop", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.389578", 
+              "trace_id": "f1095c9a-c6c1-4231-b626-2921acebf9bd", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "finished": 714, 
+            "project": "keystone", 
+            "host": "ubuntu", 
+            "meta.raw_payload.cache-start": {
+              "info": {
+                "host": "ubuntu", 
+                "fn_info": "('_get_revoke_tree', (<keystone.contrib.revoke.core.Manager object at 0x7ff1cde7e1d0>,), {})"
+              }, 
+              "name": "cache-start", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.383890", 
+              "trace_id": "f1095c9a-c6c1-4231-b626-2921acebf9bd", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }
+          }, 
+          "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+          "trace_id": "f1095c9a-c6c1-4231-b626-2921acebf9bd", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [], 
+                  "statement": "SELECT 1"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.412558", 
+              "trace_id": "35c4ce1d-bdb4-4ea1-a1ed-5f9a9b18bcf6", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "admin", 
+            "started": 737, 
+            "finished": 741, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.416043", 
+              "trace_id": "35c4ce1d-bdb4-4ea1-a1ed-5f9a9b18bcf6", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+          "trace_id": "35c4ce1d-bdb4-4ea1-a1ed-5f9a9b18bcf6", 
+          "children": []
+        }, 
+        {
+          "info": {
+            "meta.raw_payload.db-start": {
+              "info": {
+                "host": "ubuntu", 
+                "db": {
+                  "params": [
+                    "default"
+                  ], 
+                  "statement": "SELECT user.id AS user_id, user.name AS user_name, user.domain_id AS user_domain_id, user.password AS user_password, user.enabled AS user_enabled, user.extra AS user_extra, user.default_project_id AS user_default_project_id \nFROM user \nWHERE user.domain_id = %s"
+                }
+              }, 
+              "name": "db-start", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.422059", 
+              "trace_id": "5c62f125-ebe6-4985-83f5-3258dc6dbce0", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "name": "db", 
+            "service": "admin", 
+            "started": 747, 
+            "finished": 751, 
+            "project": "keystone", 
+            "meta.raw_payload.db-stop": {
+              "info": {
+                "host": "ubuntu"
+              }, 
+              "name": "db-stop", 
+              "service": "admin", 
+              "timestamp": "2016-03-27T09:32:17.426581", 
+              "trace_id": "5c62f125-ebe6-4985-83f5-3258dc6dbce0", 
+              "project": "keystone", 
+              "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+              "base_id": "b82be140-a480-4765-8038-336f3e77b591"
+            }, 
+            "host": "ubuntu"
+          }, 
+          "parent_id": "7a83c639-fb61-4487-903a-53ebe6223efa", 
+          "trace_id": "5c62f125-ebe6-4985-83f5-3258dc6dbce0", 
+          "children": []
+        }
+      ]
+    }
+  ]
+}
+    </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+
+    <style>
+      .trace {
+        min-width: 900px;
+        width: 100%;
+      }
+      .trace tr:hover {
+        background-color: #D9EDF7!important;
+      }
+      .trace tr td {
+        width: 14%;
+        white-space: nowrap;
+        padding: 2px;
+        border-right: 1px solid #eee;
+      }
+      .trace tr td.details {
+        width: 10%;
+        padding-right: 20px;
+      }
+      .trace.cursor_pointer_on_hover {
+        cursor: pointer;
+      }
+      .trace .level {
+        width: 10%;
+        font-weight: bold;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .duration {
+        width: 25px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #c6eff3;
+        border-radius: 4px;
+        font-size: 10px;
+      }
+      .duration div{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center;
+      }
+    </style>
+
+    <script type="text/ng-template"  id="tree_item_renderer.html">
+
+        <div ng-init="hide_children=false">
+          <table class="trace cursor_pointer_on_hover">
+            <tr>
+              <td class="level" style="padding-left:{{data.level * 5}}px;">
+                <button type="button" class="btn btn-default btn-xs" ng-disabled="data.is_leaf" ng-click="hide_children=!hide_children">
+                  <span class="glyphicon glyphicon-{{ (data.is_leaf) ? 'cloud' : ((hide_children) ? 'plus': 'minus')}}"></span>
+                  {{data.level || 0}}
+                </button>
+              </td>
+              <td ng-click="display(data);" class="text-center">
+               <div class="duration" style="width: {{get_width(data)}}%; margin-left: {{get_started(data)}}%">
+                  <div>{{data.info.finished - data.info.started}} ms</div>
+                </div>
+              </td>
+              <td ng-click="display(data);" class="{{ is_important(data) ? 'bold' : ''}} text-right" > {{data.info.name}} </td>
+              <td ng-click="display(data);"> {{data.info.project  || "n/a"}}</td>
+              <td ng-click="display(data);"> {{data.info.service  || "n/a" }} </td>
+              <td ng-click="display(data);"> {{data.info.host || "n/a"}} </td>
+              <td class="details">
+                <a href="#" ng-click="display(data);"> Details </a>
+              </td>
+            </tr>
+          </table>
+
+        <div ng-hide="hide_children">
+          <div ng-repeat="data in data.children" ng-include="'tree_item_renderer.html'"> </div>
+        </div>
+      </div>
+
+    </script>
+
+    <script>
+      angular.module("Application", ['ui.bootstrap']);
+
+      function ProfilerCtlr($scope, $modal) {
+
+        var convert_input = function(input, level){
+          level = (level) ? level : 0;
+          input.level = level;
+          input.is_leaf = !input.children.length
+
+          for (var i=0; i < input.children.length; i++)
+            convert_input(input.children[i], level + 1);
+          return input;
+        }
+
+        $scope.get_width = function(data){
+
+          var full_duration = $scope.tree[0].info.finished;
+          var duration = (data.info.finished - data.info.started) * 100.0 / full_duration;
+          return (duration >= 0.5) ? duration : 0.5;
+        }
+
+        $scope.get_started = function(data) {
+          var full_duration = $scope.tree[0].info.finished;
+          return data.info.started * 100.0 / full_duration;
+        }
+
+        $scope.is_important = function(data) {
+          return ["total", "wsgi", "rpc"].indexOf(data.info.name) != -1;
+        }
+
+        $scope.display = function(data){
+          var info = angular.copy(data.info);
+
+          var metadata = {};
+          angular.forEach(info, function(value, key) {
+            var parts = key.split(".");
+            if (parts[0] == "meta"){
+
+              if (parts.length == 2){
+                this[parts[1]] = value;
+              }
+              else{
+                var group_name = parts[1];
+                if (!(group_name in this))
+                  this[group_name] = {};
+
+                this[group_name][parts[2]] = value;
+              }
+            };
+          }, metadata);
+
+          info["duration"] = info["finished"] - info["started"]
+          info["metadata"] = "<pre>" + JSON.stringify(metadata, "", 4) + "</pre>"
+
+          var trace_data = "<div class='row'>"
+          columns = ["name", "project", "service", "host", "started",
+                     "finished", "duration", "metadata"];
+          for (var i = 0; i < columns.length; i++){
+            trace_data += "<div class='col-md-2 text-right text-capitalize'><strong>" + columns[i] + " </strong></div>";
+            trace_data += "<div class='col-md-10 text-left'>" + info[columns[i]] + "</div>";
+          }
+          trace_data += "</div>";
+
+          var output = (
+            '<div class="modal-header"> Trace Point Details </div>' +
+            '<div class="modal-body">' + trace_data + '</div>' +
+            '<div class="modal-footer"> <span class="glyphicon glyphicon-cloud </div>'
+          );
+
+          var modal_instance = $modal.open({
+            "template": output,
+            "size": "lg"
+          });
+        }
+
+        $scope.tree = [convert_input(OSProfilerData)];
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div ng-controller="ProfilerCtlr">
+      <table class="trace">
+        <tr class="bold text-left" style="border-bottom: solid 1px gray">
+          <td class="level">Levels</td>
+          <td>Duration</td>
+          <td class="text-right">Type</td>
+          <td>Project</td>
+          <td>Service</td>
+          <td>Host</td>
+          <td class="details">Details</td>
+        </tr>
+      </table>
+      <div ng-repeat="data in tree" ng-include="'tree_item_renderer.html'"></div>
+    </div>
+
+  </body>
+
+</html>
